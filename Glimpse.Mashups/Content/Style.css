@@ -1,0 +1,89 @@
+﻿#glimpse-mashups-contributors .avatar,
+#glimpse-mashups-contributors .avatar img {
+    display: block;
+    width: 76px;
+    height: 76px;
+    border: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#glimpse-mashups-contributors .avatar {
+    display: inline-block;
+    *display: inline; zoom: 1;
+    height: 76px;
+    padding: 2px;
+}
+
+#glimpse-mashups-contributors .avatar:hover {
+    -webkit-box-shadow: 0 0 2px #000000;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 0 2px #000000;
+    -moz-box-shadow: 0 0 2px rgba(0,0,0,0.25);
+    box-shadow: 0 0 2px #000000;
+    box-shadow: 0 0 2px rgba(0,0,0,0.25);
+}
+
+#glimpse-mashups-contributors .contributors {
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-left: 0;
+    list-style: none;
+}
+
+#glimpse-mashups-contributors .contributor {
+    margin: 5px;
+    display: inline-block;
+    *display: inline; zoom: 1;
+}
+
+#glimpse-mashups-contributors .contributor .avatar {
+    position: relative;
+    display: block;
+}
+
+#glimpse-mashups-contributors .contributor .avatar:link,
+#glimpse-mashups-contributors .contributor .avatar:visited,
+#glimpse-mashups-contributors .contributor .avatar:hover,
+#glimpse-mashups-contributors .contributor .avatar:active {
+    text-decoration: none;
+}
+
+#glimpse-mashups-contributors .contributor-name,
+#glimpse-mashups-contributors .contributor-contributions {
+    position: absolute;
+    left: 0;
+    margin: 2px;
+    padding: 0 4px;
+    width: 68px;
+    font-size: 11px;
+    color: #fff;
+    background: #000;
+    background: rgba(0,0,0, 0.2);
+    text-shadow: 0 1px 0 #000000;
+    text-shadow: 0 1px 0 rgba(0,0,0, 0.4);
+}
+
+#glimpse-mashups-contributors .contributor-name {
+    bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#glimpse-mashups-contributors .contributor-contributions {
+    top: 0;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}

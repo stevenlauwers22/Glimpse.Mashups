@@ -1,0 +1,21 @@
+﻿@{ Layout = "~/Views/Shared/_Layout.cshtml"; }
+@model IEnumerable<Glimpse.Mashups.Core.GitHub.Contributor>
+  
+<div id="glimpse-mashups-contributors">
+    <h2>Contributors</h2>
+    <ul class="contributors">
+        @{
+            var contributors = Model.OrderByDescending(c => c.Contributions).ToList();
+            foreach (var contributor in contributors)
+            {
+                <li class="contributor">
+                    <a href="https://github.com/@contributor.Login" class="avatar">
+                        <img alt="@contributor.Login's avatar" src="@contributor.AvatarUrl" />
+                        <span class="contributor-name">@contributor.Login</span>
+                        <span class="contributor-contributions">@contributor.Login</span>
+                    </a>
+                </li>
+            }
+        }
+    </ul>
+</div>
